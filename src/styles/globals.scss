@@ -1,0 +1,49 @@
+@import "variables.scss";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body,
+#app {
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+input {
+  outline: none;
+}
+
+[list]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+#app {
+  position: relative;
+  &.dark {
+    background-color: $dark-background;
+    color: $dark-text;
+  }
+  &.light {
+    background-color: $light-background;
+    color: $light-text;
+  }
+}
+
+main {
+  flex: 1;
+}
