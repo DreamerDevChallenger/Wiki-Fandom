@@ -112,7 +112,7 @@ const StyledSearch = styled.div`
     width: 100%;
     height: 40px;
     background-color: ${({ theme }) => theme.secondary};
-    color: white;
+    color: ${({ theme }) => theme.text};
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     padding: 0 20px;

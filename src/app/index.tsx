@@ -7,6 +7,7 @@ import { selectTheme } from "@/redux/selectors";
 
 import styled, { ThemeProvider } from "styled-components";
 import StyledComponentsRegistry from "./lib/registry";
+import Footer from "@/components/Footer";
 
 const darkTheme = {
   text: "#fefefe",
@@ -32,10 +33,11 @@ export default function App({ children }: { children: React.ReactNode }) {
 
   return (
     <StyledComponentsRegistry>
-      <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+      <ThemeProvider theme={theme.theme === "light" ? lightTheme : darkTheme}>
         <StyledApp id="app">
           <Header />
           {children}
+          <Footer />
         </StyledApp>
       </ThemeProvider>
     </StyledComponentsRegistry>
@@ -46,4 +48,5 @@ const StyledApp = styled.div`
   background-color: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.text};
   position: relative;
+  transition: background-color 0.2s ease-out;
 `;

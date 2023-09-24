@@ -1,1 +1,1 @@
-export const selectTheme = (state: { theme: string }) => state.theme;
+export const selectTheme = (state: { theme: any }) => state.theme;
