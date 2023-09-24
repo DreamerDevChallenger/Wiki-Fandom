@@ -1,18 +1,26 @@
 [
   {
-    "title": "One piece"
+    "title": "One piece",
+    "description": "One Piece (stylized in all caps) is a Japanese manga series written and illustrated by Eiichiro Oda. It has been serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump since July 1997, with its individual chapters compiled into 106 tankōbon volumes as of July 2023",
+    "section:": []
   },
   {
-    "title": "Dragon Ball"
+    "title": "Dragon Ball",
+    "description": "",
+    "section:": []
   },
   {
-    "title": "Naruto"
+    "title": "Naruto",
+    "description": "",
+    "section:": []
   },
   {
-    "title": "Batman"
+    "title": "Batman",
+    "description": "",
+    "section:": []
   },
-  { "title": "Game of Throne" },
-  { "title": "Harry potter" },
-  { "title": "Star Wars" },
-  { "title": "Bleach" }
+  { "title": "Game of Throne", "description": "", "section:": [] },
+  { "title": "Harry potter", "description": "", "section:": [] },
+  { "title": "Star Wars", "description": "", "section:": [] },
+  { "title": "Bleach", "description": "", "section:": [] }
 ]

@@ -1,8 +1,28 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import themeReducer from "./reducers/theme";
-import storage from "redux-persist/es/storage";
+import createWebStorage from "redux-persist/lib/storage/createWebStorage";
+
 import { persistReducer } from "redux-persist";
 import thunk from "redux-thunk";
+
+const createNoopStorage = () => {
+  return {
+    getItem(_key: any) {
+      return Promise.resolve(null);
+    },
+    setItem(_key: any, value: any) {
+      return Promise.resolve(value);
+    },
+    removeItem(_key: any) {
+      return Promise.resolve();
+    },
+  };
+};
+
+const storage =
+  typeof window !== "undefined"
+    ? createWebStorage("local")
+    : createNoopStorage();
 
 const reducers = combineReducers({
   theme: themeReducer,

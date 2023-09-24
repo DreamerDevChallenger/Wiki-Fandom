@@ -1,7 +1,9 @@
 import "../styles/globals.scss";
+
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import { Providers } from "@/redux/provider";
+import App from ".";
 
 const roboto = Roboto({
   weight: "300",

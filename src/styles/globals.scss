@@ -20,6 +20,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 input {
   outline: none;
 }
@@ -30,18 +31,6 @@ input {
 
 li {
   list-style: none;
-}
-
-#app {
-  position: relative;
-  &.dark {
-    background-color: $dark-background;
-    color: $dark-text;
-  }
-  &.light {
-    background-color: $light-background;
-    color: $light-text;
-  }
 }
 
 main {
